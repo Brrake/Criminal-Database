@@ -284,9 +284,9 @@ void generaResidenza(RecordSoggetto *soggetto){
                                     "Sud Sardegna","Roma","Palermo"};
 
 
-    casualeVia = generaCasualeInt(MIN,(N_NOMI-1));
-    casualeCitta = generaCasualeInt(MIN,(N_NOMI-1));
-    casualeProvincia = generaCasualeInt(MIN,(N_NOMI-1));
+    casualeVia = generaCasualeInt(MIN,(N_PAESI-1));
+    casualeCitta = generaCasualeInt(MIN,(N_PAESI-1));
+    casualeProvincia = generaCasualeInt(MIN,(N_PAESI-1));
 
 
     strcpy(soggetto->residenzaSoggetto, via[casualeVia]); // Copia il contenuto della via generata all' interno del relativo campo
